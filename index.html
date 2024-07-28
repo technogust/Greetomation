@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetomation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="logo">Greetomation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Send personalized messages to your loved ones</h1>
+            <p>Select an occasion, enter your message, and schedule it to be sent on a specific date and time.</p>
+        </section>
+        <section class="message-section">
+            <h2>Send a Message</h2>
+            <form>
+                <label for="occasion">Select an Occasion:</label>
+                <select id="occasion">
+                    <option value="anniversary">Anniversary</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="holiday">Holiday</option>
+                </select>
+                <label for="message">Enter your Message:</label>
+                <textarea id="message" placeholder="Enter your message here"></textarea>
+                <label for="email">Enter Recipient's Email:</label>
+                <input id="email" type="email" placeholder="Enter recipient's email">
+                <label for="whatsapp-number">Enter Recipient's WhatsApp Number:</label>
+                <input id="whatsapp-number" type="tel" placeholder="Enter recipient's WhatsApp number">
+                <label for="schedule-date">Select a Date to Send the Message:</label>
+                <input id="schedule-date" type="date" placeholder="Select a date to send the message">
+                <label for="schedule-time">Select a Time to Send the Message:</label>
+                <input id="schedule-time" type="time" placeholder="Select a time to send the message">
+                <button id="send-whatsapp">Send WhatsApp Message</button>
+                <button id="send-email">Send Email</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
